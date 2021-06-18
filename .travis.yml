@@ -1,0 +1,20 @@
+dist: trusty
+language: java
+jdk:
+- openjdk11
+
+addons:
+  sonarcloud:
+    organization: gulixciurli
+    token: 5e59f830ad4bb1dc690f799799b60e5a1ab78f93
+
+     
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey=myorg_myrepo
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn compile sonar:sonar  -Dsonar.projectKey=gulixciurli_bookkeeper -Ppit  -Dmaven.javadoc.skip=true
+
+  # - mvn clean -DskipTests
