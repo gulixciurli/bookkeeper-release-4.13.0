@@ -6,7 +6,7 @@ jdk:
 addons:
   sonarcloud:
     organization: gulixciurli
-    token: eb05f1e22b5b49a6b87fc2a77188a252de5748a4
+    token: 25906a591cdb187c25da82ec4f5c268929557bd6
 
      
 script:
