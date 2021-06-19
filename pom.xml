@@ -316,6 +316,13 @@
         <artifactId>reflections</artifactId>
         <version>${reflections.version}</version>
       </dependency>
+	  
+<!-- https://mvnrepository.com/artifact/org.apache.bookkeeper/bookkeeper-proto -->
+		<dependency>
+			<groupId>org.apache.bookkeeper</groupId>
+			<artifactId>bookkeeper-proto</artifactId>
+			<version>4.13.0</version>
+		</dependency>
 
       <!-- compression libs -->
       <dependency>
